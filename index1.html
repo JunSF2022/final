@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main>
+        <topRow class="topRow">
+        <destination class="topRowLeft">
+            From*
+            <select id = "from">
+                <option value="" selected>Select</option>
+                <option value="melbourne">Melbourne</option>                    
+                <option value="sydney">Sydney</option>
+                <option value="brisbane">Brisbane</option>
+                <option value="darwin">Darwin</option>
+                <option value="delhi">Delhi</option>
+            </select>
+            To*
+            <select id = "to">
+                <option value="" selected>Select</option>
+                <option value="melbourne">Melbourne</option>                    
+                <option value="sydney">Sydney</option>
+                <option value="brisbane">Brisbane</option>
+                <option value="darwin">Darwin</option>
+                <option value="delhi">Delhi</option>
+            </select>
+            <label id="flightError"></label>
+        </destination>
+        
+        <Dates id="dates">
+            <itineraryType id="type">
+                <input type="radio" name="itineraryType" value="oneway" id="oneway">One way
+                <input type="radio" name="itineraryType" value="return" id="return" checked="checked">Return
+                <input type="date" id="fromDate" min="2022-04-10">
+                <input type="date" id="returnDate" min="2022-04-10">
+            </itineraryType>
+            <!-- <fromDate>
+                
+            </fromDate>        
+            <returnDate>
+               
+            </returnDate>    -->
+        </Dates>
+        </topRow>
+
+        <button onclick="display()">Submit</button>
+
+
+        <passengers>
+            <psg1>
+                <input type="text" id="firstNameP1" placeholder="First Name"/>
+            </psg1>
+            <label id="firstNameError"></label>
+        </passengers>
+    </main>   
+</body>
+</html>
